@@ -1,0 +1,29 @@
+//innehåller bakgrunder samt dess boxar
+.bg-main-arrow-container {
+  width: 3em;
+  position: absolute;
+  height: 3em;
+  bottom: 0;
+  right: 50%;
+  left: 50%;
+  z-index: 999;
+}
+.bg-main-arrow {
+  position: absolute;
+  height: 2em;
+  z-index: 999;
+  transition: ease 2s;
+  &:hover {
+    transform: translateY(10px);
+  }
+}
+.bg-main {
+  position: relative;
+  min-width: 100%;
+  min-height: 812px;
+  text-align: left;
+  background-image: url(../img/adam.jpg); //Minskade storleken på filen. Med hjälp av Figma och Tiny PNG.
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}

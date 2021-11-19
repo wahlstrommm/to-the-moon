@@ -1,0 +1,315 @@
+@media screen and (min-width: 768px) {
+  .square {
+    border: solid 4px black;
+    width: 20rem;
+    height: 20rem;
+    position: absolute;
+    left: 50px;
+    top: 70px;
+    text-align: center;
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.5);
+    br {
+      //döljer radbrytet för det blir för mycket space skulle kunnat har minskat radavståndet istället men vill minska på de ställerna dät br låg.
+      display: none;
+    }
+    .ToMoon {
+      font-family: $fontR;
+      font-weight: 700;
+      font-size: 4em;
+    }
+    a {
+      font-family: "rubik", Times, serif;
+      float: right;
+    }
+  }
+  .textp {
+    font-family: $fontR;
+    margin: 0.7em;
+    line-height: 2em;
+    font-size: 1.3em;
+    padding-inline: 1em;
+    color: $white;
+  }
+  .readmorelink {
+    text-decoration: underline;
+    font-family: $fontR;
+    margin: 1em;
+    line-height: $lineH;
+    font-size: 1.2em;
+    color: $pink;
+    padding-inline: 2em;
+  }
+  .ReadmoreSquare {
+    text-decoration: none;
+    position: absolute;
+    right: 0;
+    bottom: 0.5em;
+  }
+  .footer {
+    width: 100%;
+    height: 3.5em;
+    background-color: $blue;
+    padding: 0.2em;
+    bottom: 0;
+    position: fixed;
+    z-index: 2;
+  }
+  .button {
+    color: white;
+    background-color: $blueB;
+    text-decoration: none;
+    display: inline-block;
+    border: none;
+    font-family: $fontR;
+    font-weight: 600;
+    right: 1.2em;
+    bottom: 1.4em;
+    position: absolute;
+  } //olika höjd på knappen och texten så de inte överlappar vandra.
+  .footertext {
+    position: absolute;
+    top: 50%;
+    color: $pink;
+    font-size: 1em;
+    text-shadow: $glow;
+    font-family: $fontH;
+    padding-inline: 0.5em;
+  }
+
+  .ReadmoreSquare {
+    text-decoration: none;
+    position: absolute;
+    right: 0%;
+  }
+  .invisible {
+    //detta är citatet som bara visas i desktop läget jag stod imellan att visa det i tablet också men det hade inte sett bra ut ur ett
+    //tillgänglighetsperspektiv jag vill att kunden och dens kunder ska kunna läsa det utan problem.
+    display: show;
+    font-family: "Rubik", sans-serif;
+    font-style: italic;
+    font-size: 1.5em;
+    padding: 1em;
+    margin: 1em;
+    opacity: 30%;
+    background: #cf0ebc;
+    background: #f5e3ff;
+    background: -webkit-linear-gradient(
+      to right,
+      #f5e3ff 11%,
+      #e540ff 46%,
+      #ff2bff 14%,
+      #ffffff 52%,
+      #ffffff 52%,
+      #cf15aa 100%
+    );
+    background: -moz-linear-gradient(
+      to right,
+      #f5e3ff 11%,
+      #e540ff 46%,
+      #ff2bff 14%,
+      #ffffff 52%,
+      #ffffff 52%,
+      #cf15aa 100%
+    );
+    background: linear-gradient(
+      to right,
+      #f5e3ff 11%,
+      #e540ff 46%,
+      #ff2bff 14%,
+      #ffffff 52%,
+      #ffffff 52%,
+      #cf15aa 100%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  } //citat som visa i desktop.
+
+  .head-second {
+    position: absolute;
+    width: 428px;
+    top: 0;
+    bottom: 0;
+    left: 3%;
+    .arrow {
+      position: relative;
+      transition: ease 2s;
+      &:hover {
+        transform: translateX(10px);
+      }
+    }
+  }
+  .flexcontainer {
+    //sätter flex sen delar jag upp de i två olika "boxar" sen i boxen delar jag upp de igen i två mindre som jag senare lägger så att det är jämnt utrymme mellan de. jag anävnde mig av outline för att se exakt
+    min-width: 100%;
+    min-height: 880px;
+    margin: 0;
+    position: relative;
+    display: flex;
+    order: 2;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+    .bg-secondBB {
+      position: absolute;
+      min-width: 100%;
+      min-height: 812px;
+      text-align: left;
+      background-image: url(../img/rymdencomp.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      padding-bottom: 290px;
+    }
+
+    .h2andtext {
+      width: 35%;
+      height: 95%;
+      padding-top: 7.3%; //padding så mina två boxar är lika stora.
+    }
+    .quote1 {
+      width: 100%;
+      height: 35%;
+      padding-top: 5%;
+      margin-top: 10%;
+      padding-bottom: 5%;
+      color: white;
+      font-family: "Rubik", sans-serif;
+      font-style: italic;
+      font-size: 1.5em;
+      padding: 1em;
+      margin: 1em;
+    }
+    .wrapperfortext {
+      width: 60%;
+      height: 100%;
+      top: 0;
+      position: relative; //relative så jag kan flytta bilden som ligger inne i denna
+      //absolute så jag kan flytta den
+      .adampic {
+        display: block;
+        position: absolute;
+        top: 38.6%;
+        right: 7%;
+        bottom: 10.7em;
+        transform: rotate(5deg);
+      }
+      .textp {
+        font-family: $fontR;
+        margin: 1em;
+        line-height: 2em;
+        font-size: 1.3em;
+        padding-inline: 2em;
+        color: $white;
+      }
+    }
+    .Textpic {
+      width: 100%;
+      height: 80%;
+      padding-inline: 1em;
+      padding-top: 5%;
+    }
+  }
+  .groundC {
+    font-family: $fontR;
+    font-size: 1.8em;
+    color: white;
+    line-height: $lineH;
+    padding-inline: 0.9em;
+  }
+  //"space" text sida 2
+  .spacetext {
+    color: white;
+    text-align: center;
+    font-family: $fontR;
+    font-weight: 600;
+    font-size: 7em;
+    position: absolute;
+    bottom: -55px;
+    left: 75px;
+    z-index: 999;
+    text-shadow: 2px 4px 5px rgba(0, 0, 0, 0.93);
+  }
+  //"Ventures" text sida 2
+  .spacetext2 {
+    color: rgb(95, 95, 95);
+    opacity: 75%;
+    text-align: center;
+    font-family: $fontTime;
+    font-weight: 600;
+    font-size: 8em;
+    position: relative;
+    right: 0;
+    bottom: 1em;
+    top: 0;
+    left: 0.7em;
+  }
+
+  .bg-secondBB {
+    position: absolute;
+    min-width: 100%;
+    min-height: 812px;
+    text-align: left;
+    background-image: url(../img/rymdencomp.png); //ändrade måttet på original bilden samt minskade storleken på filen. Med hjälp av Figma och Tiny PNG.
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 100px;
+  }
+  .arrowp {
+    position: relative;
+    transition: ease 2s;
+    &:hover {
+      transform: translateX(10px); //pilen som rör sig
+    }
+  }
+
+  .desktoptextfarabove {
+    font-family: $fontR;
+    line-height: 2em;
+    display: inline;
+  }
+
+  .movetext {
+    //var tvungen att flytta på text pga att ett av de sista meningarna skulle byta plats beronde på om användare använde desktop eller mobil.
+    font-family: $fontR;
+    margin: 1em;
+    line-height: 2em;
+    font-size: 1.3em;
+    padding-inline: 2em;
+    color: $white;
+  }
+  .hiddentext {
+    display: none;
+  }
+
+  header {
+    a {
+      text-decoration: none;
+      display: inline-block;
+      position: relative;
+      color: #000000;
+
+      &::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        transform: scaleX(0);
+        height: 9px;
+        bottom: 0;
+        left: 0;
+        background-color: $pink;
+        border-radius: 99px;
+        transform-origin: bottom right;
+        transition: transform 0.35s ease-out;
+      }
+
+      &:hover {
+        &::after {
+          transform: scaleX(1);
+          transform-origin: right;
+        }
+      }
+    }
+  }
+}

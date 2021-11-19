@@ -1,0 +1,165 @@
+<!doctype html>
+<html class="no-js" lang="en" prefix="og: https://ogp.me/ns#">
+
+<head>
+  <meta charset="utf-8">
+  <title>Space Ventures</title>
+  <meta name="description" content="website,about Tom">  
+  <meta name="keyword" content="Space Ventures, Major Tom,"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Magnus Vahlström"/>
+  <meta name="robots" content="index, follow"/>
+  <meta name="rating" content="general"/>
+  
+
+  <meta property="og:title" content="The amazing story about Major Tom">
+  <meta property="og:type" content="webiste,story">
+  <meta property="og:url" content="index.html"/>
+  <meta property="og:image:type" content="image.jpg"/>
+  <meta property="og:image:alt" content="Guy in space and in spacesuit."/>
+  <meta property="og:image" content="adam2.jpg">
+  <meta property="og:image:width" content="100"/><!--Tog bredden på min bild-->
+  <meta property="og:image:height" content="155"/><!--Tog höjden på min bild -->
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="./styles/base.css">
+  
+
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<!--Nu kommer jag skirva i mina aria-label på engelska för jag antar den personen som kollar på denna kan bara engelska-->
+<body>
+  <main>
+  <section class="bg-main" aria-label="section that includes my background pic">
+    <article aria-label="header-section">
+
+      <header>
+        <input type="checkbox" id="nav-toggle" class="nav-toggle"> <!--ur ett tillgänglighetsperspektiv blev det en checkbox-->
+        <nav>
+          <ul>
+            <li><a href="#">Our story</a></li><!--kunden får nöja sig med att det blir bara markerad under en av orden-->
+            <li><a href="#">Space <span class="menyOrd"><br> Ventures</span></a></li>
+            <li><a href="#">About <span class="menyord"> <br> major Tom</span></a></li>
+          </ul>
+        </nav>
+        <label for="nav-toggle" class="nav-toggle-label">
+          <span></span> <!--Används för att göra mina "streck" på meny-->
+        </label>
+      </header>
+
+    </article> 
+  
+
+
+    <section aria-label="square that contains a link"> <!--Screen readers-->
+
+          <article class="square" aria-label="box containing link and caption">
+            <h2 class="ToMoon"> TO <br> THE <br> MOON</h2>
+              <br>
+            <a href="#" class="ReadmoreSquare">Read our story <img src="../Boilerplate-HTML5/img/baseline_arrow_right_alt_black_24dp.png" class="arrow" alt="Image of one black arrow pointing to the right"></a> 
+          </article>
+
+        <article class="bg-main-arrow-container" aria-label="Main container for background."> <!--container-->
+          <img src="./img/vit-arrow.svg" class="bg-main-arrow" alt="Image of one white arrow pointing down"> <!--Svg scalar bättre-->      
+        </article>
+
+    </section>
+  </section>
+    
+  <section class="second-container" aria-label="second container"><!--container som håller i allt på andra sidan-->
+    <section class="bg-secondBB" aria-label="second container">
+
+        <article class="head-second" aria-label="article including two h2 tags"> 
+          <h2 class="spacetext">Space</h2>
+          <h2 class="spacetext2"> Ventures</h2>
+        </article>
+
+      <section class="flexcontainer" aria-label=" container for the layout">
+        <article aria-label="article with a h2 tag and some text" class="h2andtext">
+            <h2 class="groundC">Ground Control to Major Tom</h2>
+            <p class="textp">
+              Ground Control to Major Tom. Take your protein pills and put your helmet on. 
+              Ground Control to Major Tom (ten, nine, eight, seven, six). Commencing countdown, engines on (five, four, three). Check ignition and may God's love be with you (two, one, liftoff).
+              This is Ground Control to Major Tom. <br>
+            </p>
+            <p class="textp">You've really made the grade. And the papers want to know whose shirts you wear.
+            Now it's time to leave the capsule if you dare. This is Major Tom to Ground Control. I'm stepping through the door.</p> 
+
+        <br>
+        
+          <article aria-label="article that that contains some quotes" class="quote1">
+            <blockquote>
+              “And I'm floating in a most peculiar way. And the stars look very different today. For here.”
+            </blockquote>
+          </article>
+        </article>
+
+      <article aria-label="Wrapper for the text" class="wrapperfortext"> 
+
+          <blockquote class="invisible"><!--Visas bara på desktop därav class namnet-->
+            <q> Persistence is very important. You should not give up unless you are forced to give up.</q>
+          </blockquote>
+      
+          <br>
+
+        <article aria-label="article that that contains some text" class="desktoptext">
+          <p class="textp"> Am I sitting in a tin can. Far above the world. Planet Earth is blue. And there's nothing I can do. Though I'm past one hundred thousand miles.
+            I'm feeling very still. And I think my spaceship. <br>
+            knows which way to go. <br>
+             Tell my wife I love her <br>
+            very much she knows.</p> 
+            
+
+            <article aria-label="one pic on the guy in the spacesuit"> 
+              <img src="./img/tom2.jpg" height="155" width="100" alt="Image of David in a spacesuit" class="adampic"> 
+            </article>
+
+            <article aria-label="article that that contains some text about Major Tom contacting ground control" >
+              <p class="movetext">Ground Control to Major Tom. Your circuit's dead, there's <br>
+                 something wrong. Can <br>
+                  you hear me, Major Tom?
+              Can you hear me, Major Tom? Can you hear me, Major Tom? Can you "Here am I floating 'round my tin can. <span class="desktoptextfarabove">Far above the moon</span> </p> 
+            </article>
+
+            <article aria-label="article that that contains some text">
+              <p class="hiddentext">Far above the moon.</p>
+             
+              <p class="textp"> Planet Earth is blue.</p>
+              
+              <p class="textp">And there's nothing I can do.</p>
+             
+              <a href="#" class="readmorelink"> Read more about Major Tom <img src="../Boilerplate-HTML5/img/rosa-arrow.svg" class="arrowp" alt="Image of one pink arrow pointing right"></a>
+            </article>
+        </article>
+      </article>
+    </section>
+  </section>
+      <footer class="footer" aria-label="footer that that contains some cookie text">
+        <span class="footertext" >I don’t know where I’m going from here, but I 
+          promise it won’t be boring. You should accept cookies. </span><button class="button">ACCEPT</button>
+      </footer>
+</section>
+</main>
+
+  <!-- Add your site or application content here -->
+  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async></script>
+</body>
+
+</html>

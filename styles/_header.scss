@@ -1,0 +1,102 @@
+//värt att notera att jag inte valde att ha en animation på hambugerameny detta var för att jag ut ur ett
+//tillgänglighetsperspektiv ska kunden kunna använda sig ut av tangetntbordet och komma åt meny innan gick det inte som jag först hade gjort det.
+//därav lösningen med checkbox. Detta nås med en tab och mellanslag. :)
+header {
+  //header
+  background-color: transparent;
+  text-align: center;
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  height: 15%;
+  top: 0;
+  background: rgba(255, 255, 255, 0.493);
+}
+//nav-toggle så tillgängligheten finns för de som använder tangentbord där av opacity 0; Fick inte det att funka med animation och tillgängligheten så jag tyckte tillgählightetn var vikigtare
+.nav-toggle {
+  opacity: 0%;
+}
+.nav-toggle-label {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-right: 1em;
+  height: 100%;
+  display: flex;
+  align-items: center;
+} //"boxen" som ugör hambugarmeny
+.nav-toggle-label span,
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+  display: block;
+  background: rgb(0, 0, 0);
+  height: 3px;
+  width: 3em;
+  border-radius: 15px;
+  position: relative;
+} //gjorde varje "streck" med hjälp av span så placera jag. sen ändra jag bara på höjden på två lite längre ner i kodens
+.nav-toggle-label span::before {
+  content: "";
+  position: absolute;
+  bottom: 12px;
+  left: 3px;
+}
+.nav-toggle-label span::after {
+  content: "";
+  position: absolute;
+  top: 12px;
+  left: 3px;
+}
+//navigering
+nav {
+  position: absolute;
+  text-align: right;
+  top: 100%;
+  left: 0;
+  background-color: transparent;
+  background: rgba(255, 255, 255, 0.493);
+  width: 100%;
+  transform: scale(1, 0);
+  transform-origin: top;
+  transition: transform 400ms ease-in-out;
+  text-align: center;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-top: -130px;
+}
+nav li {
+  margin-bottom: 0;
+  margin-right: 0;
+  padding: 1vh;
+}
+nav a {
+  color: rgb(5, 5, 5);
+  text-decoration: none;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  opacity: 0;
+  transition: opacity 150ms ease-in-out;
+  display: inline-block;
+  padding: 0.5vh;
+  font-family: "rubik", Times, serif;
+  font-size: 2.5em;
+  font-style: bold;
+  font-weight: 600;
+  text-shadow: 1px 3px 2px rgba(150, 150, 150, 1);
+  text-shadow: 3px 5px 4px #61515a;
+}
+
+.nav-toggle:checked ~ nav {
+  //när checkboxen är i checkad.
+  transform: scale(1, 1);
+  height: 100%;
+  padding-block: 43vh;
+}
+.nav-toggle:checked ~ nav a {
+  opacity: 1;
+  transition: opacity 150ms ease-in 250ms, ease-out 250ms;
+}

@@ -1,0 +1,10 @@
+<svg version="1.2" baseProfile="tiny-ps" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48">
+	<title>baseline_arrow_right_alt_black_24dp - kopia</title>
+	<defs>
+		<image  width="32" height="16" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAQAQMAAABNzu8aAAAAAXNSR0IB2cksfwAAAAZQTFRFAAAAzABmmQMShgAAAAJ0Uk5TAP9bkSK1AAAAMElEQVR4nGNgYGBoAGKGAyDiAYj4ACJ+gIg/DP////8HIv7DiX8QCZiSD3BtYAMaAP/kGfdJU/W9AAAAAElFTkSuQmCC"/>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+	</style>
+	<use id="Background" href="#img1" x="8" y="16" />
+</svg>

@@ -1,0 +1,198 @@
+@media screen and (max-width: 350px) {
+  //Enda skillnad på denna kod är att jag har fått ändra lite på storlekarna (tex footer & button) så den passar till mobilens storlek
+  .square {
+    border: solid 4px rgb(0, 0, 0);
+    width: 13.5rem;
+    height: 14rem;
+    position: absolute;
+    left: 40px;
+    top: 60px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+  .ReadmoreSquare {
+    text-decoration: none;
+    position: absolute;
+    bottom: 0.3em;
+    margin-left: 5%;
+  }
+  .ToMoon {
+    font-family: $fontR;
+    font-weight: 700;
+    font-size: 2.5em;
+    right: 1em;
+    bottom: 0.3em;
+    position: absolute;
+  }
+  .textp {
+    font-family: $fontR;
+    max-width: 80%;
+    color: $white;
+    word-break: break-all;
+    padding: 6px;
+    margin: 6px;
+    font-size: 1em;
+  }
+  .invisible {
+    display: none;
+  }
+  blockquote {
+    color: white;
+    font-family: "Rubik", sans-serif;
+    font-style: italic;
+    font-size: 1em;
+    padding-right: 23px;
+  }
+  .footer {
+    width: 100%;
+    height: 4.5em;
+    background-color: $blue;
+    padding: 0.2em;
+    bottom: 0;
+    position: fixed;
+    z-index: 2;
+  }
+  .footertext {
+    color: $pink;
+    font-size: 0.8em;
+    text-shadow: $glow;
+    font-family: $fontH;
+  }
+
+  .button {
+    color: white;
+    background-color: $blueB;
+    text-decoration: none;
+    display: inline-block;
+    border: none;
+    font-family: $fontR;
+    right: 0.5em;
+    bottom: 0.5em;
+    position: absolute;
+  }
+  .readmorelink {
+    text-decoration: underline;
+    font-family: $fontR;
+    margin-bottom: 1em;
+    line-height: $lineH;
+    font-size: 1em;
+    color: $pink;
+    padding-left: 3%;
+  }
+  .bg-secondBB {
+    position: absolute;
+    min-width: 100%;
+    min-height: 812px;
+    text-align: left;
+    background-image: url(../img/rymdeniphone.png); //ändrade måttet på original bilden samt minskade storleken på filen. Med hjälp av Figma och Tiny PNG.
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 100px;
+  }
+  .bg-secondBB {
+    position: absolute;
+    min-width: 100%;
+    min-height: 812px;
+    text-align: left;
+    background-image: url(../img/rymdencomp.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    .head-second {
+      width: 375px;
+      height: 8em;
+      top: 0;
+      position: relative;
+    }
+    //text
+    .GH2 {
+      font-family: $fontR;
+      font-size: 1.2em;
+      color: white;
+      line-height: $lineH;
+      padding-inline: 0.9em;
+    }
+    //"space" text sida 2
+    .spacetext {
+      color: white;
+      text-align: center;
+      font-family: $fontR;
+      font-weight: 600;
+      font-size: 4em;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      z-index: 999;
+      text-shadow: 2px 4px 5px rgba(0, 0, 0, 0.93);
+    }
+    //"Ventures" text sida 2
+    .spacetext2 {
+      color: rgb(95, 95, 95);
+      opacity: 75%;
+      text-align: center;
+      font-family: $fontTime;
+      font-weight: 600;
+      font-size: 4.5em;
+      position: relative;
+      right: 0;
+      bottom: 1em;
+      top: 0.1em;
+      left: 0.1em;
+    }
+  }
+
+  .adampic {
+    display: none;
+  }
+  .ReadmoreSquare {
+    text-decoration: none;
+    position: absolute;
+    left: 0;
+    bottom: 0.5em;
+  }
+  .arrowp {
+    position: relative;
+    transition: ease 2s;
+    &:hover {
+      transform: translateX(10px);
+    }
+  }
+  .desktoptextfarabove {
+    display: none;
+  }
+
+  .movetext {
+    font-family: "Rubik", sans-serif;
+    margin: 0.6em;
+    line-height: 1.2em;
+    font-size: 1em;
+    padding-bottom: 1em;
+    color: $white;
+  }
+  .hiddentext {
+    font-family: "Rubik", sans-serif;
+    margin: 0.6em;
+    line-height: 1.2em;
+    font-size: 1em;
+    padding-bottom: 1em;
+    color: #d200a2;
+  }
+  .groundC {
+    font-family: $fontR;
+    font-size: 1.2em;
+    color: white;
+    line-height: $lineH;
+    padding-inline: 0.9em;
+  }
+
+  header {
+    a {
+      text-decoration: none;
+      display: inline-block;
+      position: relative;
+      color: #000000;
+    }
+  }
+}

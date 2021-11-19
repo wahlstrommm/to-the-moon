@@ -1,0 +1,218 @@
+@media screen and (min-width: 377px) and (max-width: 768px) {
+  .square {
+    //"fyrkanten" som innehåller texten "To the moon"
+    border: solid 4px rgb(0, 0, 0);
+    width: 13.5rem;
+    height: 14rem;
+    position: absolute;
+    left: 40px;
+    top: 60px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+  .ReadmoreSquare {
+    text-decoration: none;
+    position: absolute;
+    bottom: 0.3em;
+    margin-left: 5%;
+  }
+  .ToMoon {
+    //text
+    font-family: $fontR;
+    font-weight: 700;
+    font-size: 2.5em;
+    right: 1em;
+    bottom: 0.3em;
+    position: absolute;
+  }
+  .arrow {
+    //pilen inne i To the moon rutan
+    position: relative;
+    transition: ease 2s;
+    &:hover {
+      transform: translateX(10px);
+    }
+  }
+  .head-second {
+    //den box som håller i "space" & "Ventures"
+    position: absolute;
+    width: 428px;
+    top: 0;
+    left: 3%;
+  }
+  .textp {
+    // alla text (p) därav namnet på klassen.
+    font-family: "Rubik", sans-serif;
+    margin: 0.6em;
+    line-height: 1.2em;
+    font-size: 1em;
+    padding-bottom: 1em;
+    color: $white;
+  }
+  blockquote {
+    // denna är citatet som alltid syns
+    color: white;
+    font-family: "Rubik", sans-serif;
+    font-style: italic;
+    font-size: 1em;
+  }
+  .readmorelink {
+    //denna är a taggen "Read more about Major Tom"
+    text-decoration: underline;
+    font-family: $fontR;
+    line-height: $lineH;
+    font-size: 1em;
+    padding-inline: 1em;
+    color: $pink;
+  }
+  .invisible {
+    //dold/gömd citat. Dennas visas bara i desktop läge.
+    display: none;
+  }
+  //footer och dess tillhörande element som button tex.
+  .footer {
+    min-width: 100%;
+    height: 4.7em;
+    background-color: $blue;
+    padding: 0.2em;
+    bottom: 0;
+    position: fixed;
+    z-index: 2;
+
+    .footertext {
+      color: $pink;
+      font-size: 1em;
+      text-shadow: $glow;
+      font-family: $fontH;
+    }
+
+    .button {
+      color: white;
+      background-color: $blueB;
+      text-decoration: none;
+      display: inline-block;
+      border: none;
+      font-family: $fontR;
+      right: 1em;
+      bottom: 0.6em;
+      position: absolute;
+    }
+  }
+  //"space" text sida 2
+  .spacetext {
+    color: white;
+    text-align: center;
+    font-family: $fontR;
+    font-weight: 600;
+    font-size: 4em;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 999;
+    text-shadow: 2px 4px 5px rgba(0, 0, 0, 0.93);
+  }
+  //"Ventures" text sida 2
+  .spacetext2 {
+    color: rgb(95, 95, 95);
+    opacity: 75%;
+    text-align: center;
+    font-family: $fontTime;
+    font-weight: 600;
+    font-size: 4.5em;
+    position: relative;
+    right: 0;
+    bottom: 1em;
+    top: 0.1em;
+    left: 0.1em;
+  }
+  //"sida 2" bakgrundsbild och gömd bild på astronauten även den rosa pilen
+  .bg-secondBB {
+    position: absolute;
+    min-width: 100%;
+    min-height: 812px;
+    text-align: left;
+    background-image: url(../img/rymdencomp.png); //ändrade måttet på original bilden samt minskade storleken på filen. Med hjälp av Figma och Tiny PNG.
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 90px;
+  }
+  .adampic {
+    display: none;
+  }
+
+  .desktoptextfarabove {
+    display: none;
+  }
+
+  .hiddentext {
+    font-family: "Rubik", sans-serif;
+    margin: 0.6em;
+    line-height: 1.2em;
+    font-size: 1em;
+    padding-bottom: 1em;
+    color: $white;
+  }
+
+  .groundC {
+    font-family: $fontR;
+    font-size: 1.2em;
+    color: white;
+    line-height: $lineH;
+    padding-inline: 0.9em;
+  }
+
+  .movetext {
+    font-family: "Rubik", sans-serif;
+    margin: 0.6em;
+    line-height: 1.2em;
+    font-size: 1em;
+    padding-bottom: 1em;
+    color: $white;
+  }
+
+  .ReadmoreSquare {
+    text-decoration: none;
+    position: absolute;
+    left: 0;
+    bottom: 0.5em;
+  }
+  .arrowp {
+    position: relative;
+    transition: ease 2s;
+    &:hover {
+      transform: translateX(10px);
+    }
+  }
+
+  //header jag la till hovermeny som jag ansåg att det behövdes som att det inte var så långt ifrån desktop läge. Detta var inget som framgick från kunden så jag gjorde valet själv.
+  header {
+    a {
+      text-decoration: none;
+      display: inline-block;
+      position: relative;
+      color: #000000;
+
+      &::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        transform: scaleX(0);
+        height: 9px;
+        bottom: 0;
+        left: 0;
+        background-color: $pink;
+        border-radius: 7px;
+        transform-origin: bottom right;
+        transition: transform 0.35s ease-out;
+      }
+
+      &:hover {
+        &::after {
+          transform: scaleX(1);
+          transform-origin: bottom left;
+        }
+      }
+    }
+  }
+}
